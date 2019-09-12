@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		191F9B7322D1A01E00FEB7EB /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191F9B7222D1A01E00FEB7EB /* PreviewView.swift */; };
 		19AF54CC22D17EA000F86BDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF54CB22D17EA000F86BDD /* AppDelegate.swift */; };
 		19AF54CE22D17EA000F86BDD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF54CD22D17EA000F86BDD /* MainVC.swift */; };
 		19AF54D122D17EA000F86BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19AF54CF22D17EA000F86BDD /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		191F9B7222D1A01E00FEB7EB /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		19AF54C822D17EA000F86BDD /* AVCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19AF54CB22D17EA000F86BDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19AF54CD22D17EA000F86BDD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				19EDFD4B22D1829400D2729D /* MainView.swift */,
+				191F9B7222D1A01E00FEB7EB /* PreviewView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19AF54CE22D17EA000F86BDD /* MainVC.swift in Sources */,
+				191F9B7322D1A01E00FEB7EB /* PreviewView.swift in Sources */,
 				19EDFD4C22D1829400D2729D /* MainView.swift in Sources */,
 				19AF54CC22D17EA000F86BDD /* AppDelegate.swift in Sources */,
 			);

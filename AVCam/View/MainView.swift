@@ -23,17 +23,17 @@ class MainView: UIView {
 
 
 
-  // MARK:- SetupUI
+
+  // MARK:- Private
 
   // Camera's viewFinder
-  let previewView: UIView = {
-    let view = UIView()
-    view.backgroundColor = .red
+  private let previewView: PreviewView = {
+    let view = PreviewView()
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
 
-  let bottomControls: UIView = {
+  private let bottomControls: UIView = {
     let view = UIView()
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
