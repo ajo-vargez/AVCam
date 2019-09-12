@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let camVC = MainVC()
     window?.rootViewController = UINavigationController(rootViewController: camVC)
 
+    // Get camera permission at the beginning.
+    camVC.getCameraPermission()
+
     return true
   }
 

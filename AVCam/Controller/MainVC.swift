@@ -15,8 +15,6 @@ class MainVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    cameraPermission()
-
     self.window = UIWindow(frame: UIScreen.main.bounds)
     mainView = MainView(frame: (self.window?.frame)!)
     self.view.addSubview(mainView)
@@ -37,7 +35,7 @@ class MainVC: UIViewController {
 
 
   // MARK:- Internals
-  func cameraPermission() {
+  func getCameraPermission() {
     let cameraMediaType = AVMediaType.video
     let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: cameraMediaType)
 
