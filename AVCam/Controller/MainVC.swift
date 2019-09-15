@@ -47,11 +47,8 @@ class MainVC: UIViewController {
     case .notDetermined:
       // Prompting user for the permission to use the camera.
       AVCaptureDevice.requestAccess(for: cameraMediaType) { granted in
-        if granted {
-          print("Granted access to \(cameraMediaType)")
-        } else {
-          print("Denied access to \(cameraMediaType)")
-        }
+        if granted { print("Granted access to \(cameraMediaType)")
+        } else { print("Denied access to \(cameraMediaType)") }
       }
     @unknown default:
       fatalError()

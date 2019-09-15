@@ -33,8 +33,9 @@ class MainView: UIView {
     return view
   }()
 
-  private let bottomControls: UIView = {
+  private let cameraControls: UIView = {
     let view = UIView()
+    view.backgroundColor = .clear
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
@@ -42,18 +43,18 @@ class MainView: UIView {
   /// Sets the UI for the given view
   private func setupViews() {
     addSubview(previewView)
-    addSubview(bottomControls)
+    insertSubview(cameraControls, aboveSubview: previewView)
 
     // Preview
     NSLayoutConstraint.activate([previewView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
                                 previewView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-                                previewView.topAnchor.constraint(equalTo: self.topAnchor, constant: 34),
-                                previewView.bottomAnchor.constraint(equalTo: bottomControls.topAnchor)])
+                                previewView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+                                previewView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)])
 
     // Bottom Controls
-    NSLayoutConstraint.activate([bottomControls.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-                                bottomControls.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-                                bottomControls.heightAnchor.constraint(equalToConstant: 114),
-                                bottomControls.bottomAnchor.constraint(equalTo: self.bottomAnchor)])
+    NSLayoutConstraint.activate([cameraControls.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+                                cameraControls.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+                                cameraControls.heightAnchor.constraint(equalToConstant: 114),
+                                cameraControls.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)])
   }
 }
