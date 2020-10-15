@@ -12,6 +12,7 @@
 		19AF54CE22D17EA000F86BDD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF54CD22D17EA000F86BDD /* MainVC.swift */; };
 		19AF54D322D17EA500F86BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19AF54D222D17EA500F86BDD /* Assets.xcassets */; };
 		19AF54D622D17EA500F86BDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19AF54D422D17EA500F86BDD /* LaunchScreen.storyboard */; };
+		19BBD1B725384F3600FF1DA9 /* CameraControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBD1B625384F3600FF1DA9 /* CameraControlsView.swift */; };
 		19EDFD4C22D1829400D2729D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EDFD4B22D1829400D2729D /* MainView.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		19AF54D222D17EA500F86BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19AF54D522D17EA500F86BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19AF54D722D17EA500F86BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19BBD1B625384F3600FF1DA9 /* CameraControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlsView.swift; sourceTree = "<group>"; };
 		19EDFD4B22D1829400D2729D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 			children = (
 				19EDFD4B22D1829400D2729D /* MainView.swift */,
 				191F9B7222D1A01E00FEB7EB /* PreviewView.swift */,
+				19BBD1B625384F3600FF1DA9 /* CameraControlsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				191F9B7322D1A01E00FEB7EB /* PreviewView.swift in Sources */,
 				19EDFD4C22D1829400D2729D /* MainView.swift in Sources */,
 				19AF54CC22D17EA000F86BDD /* AppDelegate.swift in Sources */,
+				19BBD1B725384F3600FF1DA9 /* CameraControlsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
