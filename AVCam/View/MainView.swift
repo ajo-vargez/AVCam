@@ -33,11 +33,11 @@ class MainView: UIView {
 		return view
 	}()
 	
-	private let cameraControls: UIView = {
-		let view = UIView()
-		view.backgroundColor = .clear
+	private let cameraControls: CameraControlsView = {
+		let view = CameraControlsView()
+    view.backgroundColor = .cyan
 		view.translatesAutoresizingMaskIntoConstraints = false
-		return view
+    return view
 	}()
 	
 	/// Sets the UI for the given view

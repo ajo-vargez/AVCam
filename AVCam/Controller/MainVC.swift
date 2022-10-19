@@ -51,7 +51,7 @@ class MainVC: UIViewController {
 					} else { print("Denied access to \(cameraMediaType)") }
 				}
 			@unknown default:
-				fatalError()
+				fatalError("This is not supposed to happen!")
 		}
 	}
 }
