@@ -81,7 +81,9 @@ final class PreviewView: UIView, AVCaptureVideoDataOutputSampleBufferDelegate {
 			layer.masksToBounds = true
 			layer.addSublayer(previewLayer)
 			previewLayer.frame = bounds
-			session.startRunning()
+      vdoQ.async {
+        self.session.startRunning()
+      }
 		} catch let err {
 			NSLog("\(self.self): \(#function) line: \(#line).  \(err.localizedDescription)")
 		}
